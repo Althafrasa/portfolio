@@ -409,29 +409,52 @@
                     <!-- Contact Start -->
 <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
     <h1 class="title pb-3 mb-5">Contact Me</h1>
-   <form action="https://formsubmit.co/kingofalthaf@gmail.com" method="POST">
-    
-    <div class="form-group">
-      <div class="form-row row g-3">
-        <div class="col-md-6">
-          <input type="text" name="name" class="form-control border-0 bg-secondary text-light" placeholder="Full Name" required>
-        </div>
-        <div class="col-md-6">
-          <input type="email" name="email" class="form-control border-0 bg-secondary text-light" placeholder="Email Address" required>
-        </div>
+    <form action="https://formsubmit.co/kingofalthaf@gmail.com" method="POST">
+  <div class="row g-3">
+
+    <!-- Name -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" name="name" class="form-control border-0 bg-secondary text-light" id="name" placeholder="Your Name" required>
+        <label for="name">Your Name</label>
       </div>
     </div>
 
-    <div class="form-group mt-3">
-      <textarea name="message" rows="6" class="form-control border-0 bg-secondary text-light" placeholder="Your Message" required></textarea>
+    <!-- Email -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="email" name="email" class="form-control border-0 bg-secondary text-light" id="email" placeholder="Your Email" required>
+        <label for="email">Your Email</label>
+      </div>
     </div>
 
-    <!-- Hidden Fields -->
+    <!-- Subject -->
+    <div class="col-12">
+      <div class="form-floating">
+        <input type="text" name="subject" class="form-control border-0 bg-secondary text-light" id="subject" placeholder="Subject">
+        <label for="subject">Subject</label>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea name="message" class="form-control border-0 bg-secondary text-light" id="message" placeholder="Leave a message here" style="height: 200px" required></textarea>
+        <label for="message">Message</label>
+      </div>
+    </div>
+
+    <!-- Hidden Inputs -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://althafrasa.github.io/portfolio/thank-you.html">
 
-    <button type="submit" class="btn btn-primary w-100 mt-4 py-3">Send Message</button>
-  </form>
+    <!-- Submit Button -->
+    <div class="col-12">
+      <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+    </div>
+
+  </div>
+</form>
 
 </section>
 
