@@ -25,6 +25,13 @@
   }
 }
 
+.round-image {
+    width: 100px;          /* adjust as needed */
+    height: 100px;         /* make it equal to width */
+    border-radius: 50%;    /* makes it round */
+    object-fit: cover;     /* ensures it stays contained */
+    border: 2px solid #fff; /* optional white border */
+  
 .fw-semi-bold {
   font-weight: 600;
 }
