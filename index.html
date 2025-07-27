@@ -415,7 +415,15 @@
     <!-- Name -->
     <div class="col-md-6">
       <div class="form-floating">
-        <input type="text" name="name" class="form-control border-0 bg-secondary text-light" id="name" placeholder="Your Name" required>
+        <input
+          type="text"
+          name="name"
+          class="form-control border-0 bg-secondary text-light"
+          id="name"
+          placeholder="Your Name"
+          required
+          autocomplete="name"
+        />
         <label for="name">Your Name</label>
       </div>
     </div>
@@ -423,7 +431,15 @@
     <!-- Email -->
     <div class="col-md-6">
       <div class="form-floating">
-        <input type="email" name="email" class="form-control border-0 bg-secondary text-light" id="email" placeholder="Your Email" required>
+        <input
+          type="email"
+          name="email"
+          class="form-control border-0 bg-secondary text-light"
+          id="email"
+          placeholder="Your Email"
+          required
+          autocomplete="email"
+        />
         <label for="email">Your Email</label>
       </div>
     </div>
@@ -431,7 +447,14 @@
     <!-- Subject -->
     <div class="col-12">
       <div class="form-floating">
-        <input type="text" name="subject" class="form-control border-0 bg-secondary text-light" id="subject" placeholder="Subject">
+        <input
+          type="text"
+          name="subject"
+          class="form-control border-0 bg-secondary text-light"
+          id="subject"
+          placeholder="Subject"
+          autocomplete="off"
+        />
         <label for="subject">Subject</label>
       </div>
     </div>
@@ -439,22 +462,32 @@
     <!-- Message -->
     <div class="col-12">
       <div class="form-floating">
-        <textarea name="message" class="form-control border-0 bg-secondary text-light" id="message" placeholder="Leave a message here" style="height: 200px" required></textarea>
+        <textarea
+          name="message"
+          class="form-control border-0 bg-secondary text-light"
+          id="message"
+          placeholder="Leave a message here"
+          style="height: 200px"
+          required
+          autocomplete="off"
+        ></textarea>
         <label for="message">Message</label>
       </div>
     </div>
 
     <!-- Hidden Inputs -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://althafrasa.github.io/portfolio/thank-you.html">
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://althafrasa.github.io/portfolio/thank-you.html" />
+    <input type="hidden" name="_template" value="box" />
+    <input type="hidden" name="_subject" value="New message from Portfolio Website" />
 
     <!-- Submit Button -->
     <div class="col-12">
       <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
     </div>
-
   </div>
 </form>
+
 
 </section>
 
